@@ -11,6 +11,7 @@ export class ProductService {
   }
   removeProduct(id){
     return this.products.filter(product => product.id != id);
+    
   }
   addProduct(product){
     const newProduct = { id: 5, ...product};
